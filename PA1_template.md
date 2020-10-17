@@ -38,7 +38,7 @@ steps_daily <- aggregate(steps ~ date, data = step_counts, sum)
 hist(steps_daily$steps)
 ```
 
-![](PA1_template_files/figure-gfm/unnamed-chunk-18-1.png)<!-- -->
+![](PA1_template_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
 
 3.  Calculate and report the mean and median of the total number of
     steps taken per day
@@ -70,7 +70,7 @@ steps_interval <- aggregate(steps ~ interval, data = step_counts, mean)
 plot(steps_interval, type = "l")
 ```
 
-![](PA1_template_files/figure-gfm/unnamed-chunk-20-1.png)<!-- -->
+![](PA1_template_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
 
 2.  Which 5-minute interval, on average across all the days in the
     dataset, contains the maximum number of steps?
@@ -135,7 +135,7 @@ steps_daily <- aggregate(steps ~ date, data = step_counts, sum)
 hist(steps_daily$steps)
 ```
 
-![](PA1_template_files/figure-gfm/unnamed-chunk-24-1.png)<!-- -->
+![](PA1_template_files/figure-gfm/unnamed-chunk-9-1.png)<!-- -->
 
 ``` r
 mean(steps_daily$steps)
@@ -183,4 +183,4 @@ steps_interval <- aggregate(steps ~ interval + day, data = step_counts, mean)
 xyplot(steps_interval$steps ~ steps_interval$interval | steps_interval$day, layout = c(1, 2), type = "l", xlab = "Interval", ylab = "Number of steps")
 ```
 
-![](PA1_template_files/figure-gfm/unnamed-chunk-27-1.png)<!-- -->
+![](PA1_template_files/figure-gfm/unnamed-chunk-12-1.png)<!-- -->

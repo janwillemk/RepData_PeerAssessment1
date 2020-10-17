@@ -1,6 +1,6 @@
 ---
 title: "Reproducible Research project week 2"
-output: github_document
+output: html_document
 ---
 
 ```{r setup, include=FALSE}
